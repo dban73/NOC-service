@@ -7,3 +7,6 @@ logs/
 .prettierrc
 
 .env
+
+mongo/
+postgres/
