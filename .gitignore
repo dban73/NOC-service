@@ -7,6 +7,9 @@ logs/
 .prettierrc
 
 .env
+.env.test
 
 mongo/
 postgres/
+
+coverage/

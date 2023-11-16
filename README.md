@@ -16,4 +16,6 @@ the final idea is create a series of task using Typescript
    PROD=false
 
 3. Execute command **_npm install_**
-4. Execute command **_npm run dev_**
+4. Execute data bases command **_docker-compose up -d_**
+5. Execute the command **_npx prisma migrate dev_**
+6. Execute command **_npm run dev_**

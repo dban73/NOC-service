@@ -29,17 +29,17 @@ export class Server {
     // ]);
     // emailService.sendEmailWithFileSystemLogs(['killedmilo@gmail.com']);
 
-    const logs = await fileSystemLogRepository.getLogs(LogSeverityLevel.low);
-    console.log(logs);
-    CronService.createJob('*/5 * * * * *', () => {
-      // const url = `http://localhost:3000/posts`;
-      const url = `https://google.com`;
-      new CheckServiceMultiple(
-        [fileSystemLogRepository, mongoLogRepository, postgresLogRepository],
-        () => console.log(`${url} is ok`),
-        (error) => console.log(error)
-      ).execute(url);
-      //new CheckService().execute('http://localhost:3000/posts');
-    });
+    // const logs = await fileSystemLogRepository.getLogs(LogSeverityLevel.low);
+    // console.log(logs);
+    // CronService.createJob('*/5 * * * * *', () => {
+    //   // const url = `http://localhost:3000/posts`;
+    //   const url = `https://google.com`;
+    //   new CheckServiceMultiple(
+    //     [fileSystemLogRepository, mongoLogRepository, postgresLogRepository],
+    //     () => console.log(`${url} is ok`),
+    //     (error) => console.log(error)
+    //   ).execute(url);
+    //   //new CheckService().execute('http://localhost:3000/posts');
+    // });
   }
 }
