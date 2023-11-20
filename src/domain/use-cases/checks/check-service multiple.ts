@@ -17,7 +17,7 @@ export class CheckServiceMultiple implements CheckServiceMultipleUseCase {
 
   private callLogs(log: LogEntity) {
     this.logRepository.forEach((logRepository) => {
-      logRepository;
+      logRepository.saveLog(log);
     });
   }
   public async execute(url: string): Promise<boolean> {
